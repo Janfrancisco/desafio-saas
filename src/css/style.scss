@@ -3,9 +3,12 @@
 $headings: #000;
 $text: #6B7280;
 $border: #CCCCCC;
-$backgroundColor:#D1D5DB;
+$backgroundImage: url('../images/background.png');
 $width: 60%;
 
+@mixin background-image{
+    background-image: $backgroundImage;
+}
 @mixin style-text {
     h1{
        font-size: 56px;
@@ -50,12 +53,18 @@ a{
     &:hover{
         color: $text;
     }
+    &#login{
+        background-color: #ffffff;
+        display: inline;
+        border: 1px solid $text;
+        
+    }
 
 
 }
  //  cover design
 .cover{
-    background-color: $backgroundColor;
+    @include background-image();
     min-height: 100vh;
 
     // hero design
@@ -198,7 +207,7 @@ header{
 .preco{
     display: flex;
     min-height: 100vh;
-    background-color: $backgroundColor;
+    @include background-image();
 
     .info{
         display: flex;

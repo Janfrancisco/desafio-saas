@@ -23,9 +23,14 @@ li a {
 li a:hover {
   color: #6B7280;
 }
+li a#login {
+  background-color: #ffffff;
+  display: inline;
+  border: 1px solid #6B7280;
+}
 
 .cover {
-  background-color: #D1D5DB;
+  background-image: url("../images/background.png");
   min-height: 100vh;
 }
 .cover .hero {
@@ -157,7 +162,7 @@ header .toogle-btn {
 .preco {
   display: flex;
   min-height: 100vh;
-  background-color: #D1D5DB;
+  background-image: url("../images/background.png");
 }
 .preco .info {
   display: flex;
