@@ -243,6 +243,9 @@ header{
   
 }
 @media(orientation: landscape){
+    .hero{
+        padding-top: 0;
+    }
     
     .cover{
         height: max-content;
@@ -250,6 +253,17 @@ header{
     }
     .como-funciona{
         padding: 20px 0;
+        .explains{
+            .image{
+                width: 35%;
+            }
+            .text-explains{
+                width: 65%;
+                p{
+                    font-size: 20px;;
+                }
+            }
+        }
     }
 }
 /*  @media(max-width:801px) and (min-width:400px){
