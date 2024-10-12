@@ -189,7 +189,7 @@ header .toogle-btn {
   }
   .como-funciona .explains {
     flex-direction: column;
-    margin-bottom: 32px;
+    margin-bottom: 36px;
   }
   .como-funciona .explains .text-explains {
     width: 100%;
