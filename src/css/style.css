@@ -304,11 +304,17 @@ footer p {
   .nav-bar .toogle-btn {
     display: block;
   }
+  .final {
+    padding: 0 28px;
+  }
   .final h1 {
     font-size: 34px;
   }
-  .final {
-    padding: 0 8px;
+  .final p {
+    line-height: 1.5rem;
+  }
+  .final h1 {
+    font-size: 34px;
   }
 }
 @media (orientation: landscape) and (max-height: 400px) {
