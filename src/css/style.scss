@@ -8,6 +8,9 @@ $width: 60%;
 
 @mixin background-image{
     background-image: $backgroundImage;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 @mixin style-text {
     h1{
@@ -225,6 +228,54 @@ header{
     }
 
 }
+.final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    gap: 2rem;
+
+    @include style-text();
+    
+    .cta{
+        button{
+            background-color: $headings;
+            border-radius: 8px;
+            height: 40px;
+            color: #ffffff;
+            padding: 8px;
+            font-size: 0.85rem;
+            margin-left: .6rem;
+            width: 320px;
+            cursor: pointer;
+
+        }
+        p{
+            font-size: .65rem;
+            color:$text;
+            text-align: center;
+
+        }
+    }
+   
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+    // gap: 2rem;
+
+    p{
+        font-size: 12px;
+        font-weight: 300;
+        color: $text;
+    }
+    
+}
 
 @media(max-width:700px){
     .cover{
@@ -242,6 +293,9 @@ header{
     }
   
 }
+/* .final{
+    @include style-text
+} */
 @media(max-width:530px){
     .cover{
         .hero{
@@ -294,6 +348,11 @@ header{
         }
         .toogle-btn{
             display: block;
+        }
+    }
+    .final{
+        h1{
+            font-size: 34px;
         }
     }
  
