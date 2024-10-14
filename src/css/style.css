@@ -307,6 +307,9 @@ footer p {
   .final h1 {
     font-size: 34px;
   }
+  .final {
+    padding: 0 8px;
+  }
 }
 @media (orientation: landscape) and (max-height: 400px) {
   .cover {
